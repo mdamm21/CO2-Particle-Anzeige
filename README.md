@@ -23,7 +23,7 @@ Das Projekt befindet sich in der Aktiven Entwicklung.
   **Programmiersprache:**
   - C++
 
-    **IDE:**
+  **IDE:**
   - VS code
   - PlattformIO
 
