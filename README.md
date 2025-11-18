@@ -7,7 +7,7 @@ Daher ist das Ziel ein einfaches, günstiges System zu bauen, welches einen ähn
 
 ## Status des Projekts
 
-Das Projekt befindet sich in der Aktiven Entwicklung.
+Das Projekt ist Funktionsfähig, befindet sich in der Testphase.
 
 ## Verwendete Hardware
 
