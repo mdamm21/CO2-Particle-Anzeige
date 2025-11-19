@@ -18,6 +18,10 @@ Das Projekt ist Funktionsfähig, befindet sich in der Testphase.
    - Breadboard
    - Jumpercable
 
+## Aufbau
+
+<img width="900" height="816" alt="Screenshot 2025-11-19 233711" src="https://github.com/user-attachments/assets/dad87bb1-ba11-42c0-96bd-0a5b42423c8a" />
+
 ## Verwendete Technologien
   
   **Programmiersprache:**
