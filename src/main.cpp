@@ -32,11 +32,12 @@ void loop() {
   lcd.print(" ");
 
   lcd.setCursor(0,2);
+  // Grenzwert 90ppm 
   if (sensorWert >= 90){
     lcd.print("Status: Lüften!!!");
   }else{
     lcd.print("Status: Alles Ok");
   }
-  // Grenzwert 90ppm 
+  
   delay(1000);
 }
