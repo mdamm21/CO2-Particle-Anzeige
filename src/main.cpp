@@ -106,9 +106,9 @@ void loop() {
 
     lcd.setCursor(0, 3);
     if (sensorWert >= grenzWert) {
-      lcd.print("Status: Lueften!!!   ");
+      lcd.print(" Status: Lueften!!!  ");
     } else {
-      lcd.print("Status: Alles OK     ");
+      lcd.print("  Status: Alles OK   ");
     }
   }
 }
