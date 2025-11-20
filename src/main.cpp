@@ -2,9 +2,32 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-int sensorWert = 0;
-
 LiquidCrystal_I2C lcd(0x27, 20,4);
+
+int sensorWert = 0;
+int grenzWert = 420;
+int ppmWert = 0;
+
+const int MIN_PPM = 400;
+const int MAX_PPM = 2000;
+
+unsigned long lastScreenUpdate = 0;
+unsigned long lastScreenToggle = 0;
+bool blinkstate = false; 
+
+void drawCenteredText(uint8_t row, const String &text){
+  int len = text.length();
+  int startCol = (20 - len) / 2;
+  if (startCol < 0) startCol = 0;
+
+  lcd.setCursor(0, row);
+  lcd.print("                    "); // 20 x Leerzeichen
+
+  lcd.setCursor(startCol, row);
+  lcd.print(text);
+}
+
+
 
 void setup() {
   // Gassensor
@@ -28,12 +51,12 @@ void loop() {
   //LCD
   lcd.setCursor(0,1);
   lcd.print("Raw: ");
-  lcd.print(sensorWert * 4);
+  lcd.print(ppmWert);
   lcd.print(" ");
 
   lcd.setCursor(0,2);
-  // Grenzwert 90ppm 
-  if (sensorWert >= 90){
+
+  if (sensorWert >= grenzWert){
     lcd.print("Status: Lüften!!!");
   }else{
     lcd.print("Status: Alles Ok");
