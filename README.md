@@ -5,10 +5,6 @@
 Ein kommerzieller CO2 Partikel Messer oder auch einfache Ampel Systeme, kosten schnell über 40€. 
 Daher ist das Ziel ein einfaches, günstiges System zu bauen, welches einen ähnlichen Effekt erzielt. 
 
-## Status des Projekts
-
-Das Projekt ist Funktionsfähig, befindet sich in der Testphase.
-
 ## Verwendete Hardware
 
    - Arduino Uno R3
